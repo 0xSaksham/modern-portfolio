@@ -7,6 +7,8 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 
+import appCss from "@/styles/app.css?url";
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
@@ -21,7 +23,12 @@ export const Route = createRootRoute({
         title: "Saksham's Portfolio",
         description: "Welcome to Saksham's personal portfolio",
         keywords: "Saksham, Portfolio, Web Development",
-
+      },
+    ],
+    links: [
+      {
+        rel: "stylesheet",
+        href: appCss,
       },
     ],
   }),
